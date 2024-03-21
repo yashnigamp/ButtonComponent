@@ -1,17 +1,19 @@
 import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 
+
 function App() {
-  const handleClick = () => {
-    console.log("Button clicked!");
+  const requestCameraPermission = () => {
+    console.log("Hello")
   };
   return (
     <>
       <Navbar />
+      <div id="he">CLick</div>
       <div className="flex justify-center m-10 gap-4">
-        <Button onClick={handleClick}>Scan BarCode</Button>
-        <Button onClick={handleClick}>Get GeoLocation</Button>
-        <Button onClick={handleClick}>Open Camera</Button>
+        <Button onClick={requestCameraPermission}>Scan BarCode</Button>
+        {/* <Button onClick={handleClick}>Get GeoLocation</Button>
+        <Button onClick={handleClick}>Open Camera</Button> */}
       </div>{" "}
     </>
   );
