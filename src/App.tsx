@@ -1,10 +1,15 @@
 import Button from "./components/Button";
 import Navbar from "./components/Navbar";
 
-
+declare global {
+  interface Window {
+    Android: any;
+  }
+}
 function App() {
   const requestCameraPermission = () => {
-    console.log("Hello")
+    console.log("Hello");
+    window.Android.requestCameraPermission();
   };
   return (
     <>
