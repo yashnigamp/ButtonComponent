@@ -23,7 +23,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <div id="he">CLick</div>
       <div className="flex justify-center m-10 gap-4">
         <Button onClick={requestBarcodePermission}>Scan BarCode</Button>
         <Button onClick={requestLocationPermission}>Get GeoLocation</Button>
